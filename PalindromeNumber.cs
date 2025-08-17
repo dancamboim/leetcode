@@ -17,14 +17,13 @@
 
 // Follow up: Could you solve it without converting the integer to a string?
 
-using System.Linq;
-
-public class Solution {
-    public bool IsPalindrome(int x) {
-        
-         var numberString = x.ToString().ToCharArray();
+public class Solution
+{
+    public bool IsPalindrome(int x)
+    {
+        var numberString = x.ToString().ToCharArray();
         var numberStringReverse = (char[])numberString.Clone();
-        
+
         Array.Reverse(numberStringReverse);
 
         return numberString.SequenceEqual(numberStringReverse);
