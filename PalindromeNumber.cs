@@ -66,6 +66,8 @@ public class Solution
         return xArray.SequenceEqual(xReversed);
     }
 
+    //Runtime 3ms - Beats 36.78%
+    //Memory 35.66Mb Beats 56.18%
     public bool IsPalindromeNoConvertingToCharArrayUsingOneArrayOnly(int x)
     {
 
