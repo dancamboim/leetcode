@@ -1,3 +1,4 @@
 ﻿using Leetcode.Problems;
-var retorno = Maximum69Number.Implementation(666);
+
+var retorno = LongestCommonPrefix.Implementation(["a","ab"]);
 Console.WriteLine(retorno);
