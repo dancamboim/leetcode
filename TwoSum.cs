@@ -25,41 +25,44 @@
  
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
-public class Solution
+namespace LeetcodeExercices
 {
-    public int[] TwoSum(int[] nums, int target)
+    public class TwoSum
     {
-        //O(n²)
-        // for (var i = 0; i < nums.Length; i++)
-        // {
-        //     for (var j = i + 1; j < nums.Length; j++)
-        //     {
-        //         if ((nums[i] + nums[j]) == target)
-        //         {
-        //             return new int[] { i, j };
-        //         }
-        //     }
-        // }
-        // return new int[0];
-
-        //O(n)
-        var map = new Dictionary<int, int>();
-
-        for (var i = 0; i < nums.Length; i++)
+        public int[] Implementation(int[] nums, int target)
         {
-            int complement = target - nums[i];
+            //O(n²)
+            // for (var i = 0; i < nums.Length; i++)
+            // {
+            //     for (var j = i + 1; j < nums.Length; j++)
+            //     {
+            //         if ((nums[i] + nums[j]) == target)
+            //         {
+            //             return new int[] { i, j };
+            //         }
+            //     }
+            // }
+            // return new int[0];
 
-            if (map.ContainsKey(complement))
+            //O(n)
+            var map = new Dictionary<int, int>();
+
+            for (var i = 0; i < nums.Length; i++)
             {
-                return new int[] { map[complement], i };
+                int complement = target - nums[i];
+
+                if (map.ContainsKey(complement))
+                {
+                    return new int[] { map[complement], i };
+                }
+
+                if (map.ContainsKey(nums[i]) == false)
+                {
+                    map[nums[i]] = i;
+                }
             }
 
-            if (map.ContainsKey(nums[i]) == false)
-            {
-                map[nums[i]] = i;
-            }
+            return new int[0];
         }
-
-        return new int[0];
     }
 }

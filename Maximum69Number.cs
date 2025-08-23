@@ -28,18 +28,20 @@
 
 // 1 <= num <= 104
 // num consists of only 6 and 9 digits.
+namespace LeetcodeExercices
+{
+    public class Maximum69Number {
+        public int Implementation (int num) {
+            var numChar = num.ToString().ToCharArray();
 
-public class Solution {
-    public int Maximum69Number (int num) {
-        var numChar = num.ToString().ToCharArray();
-
-        for (var i = 0; i < numChar.Length; i++)
-        {
-            if  (numChar[i] == '6'){
-                numChar[i] = '9';
-                break;
+            for (var i = 0; i < numChar.Length; i++)
+            {
+                if  (numChar[i] == '6'){
+                    numChar[i] = '9';
+                    break;
+                }
             }
+            return int.Parse(numChar);
         }
-        return int.Parse(numChar);
     }
 }

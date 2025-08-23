@@ -1,0 +1,30 @@
+# Ignore build results
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore Rider settings
+.idea/
+
+# Ignore build logs
+*.log
+
+# Ignore dotnet artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore temp files
+~$*
+*.tmp
+
+# Ignore Test Results
+TestResults/

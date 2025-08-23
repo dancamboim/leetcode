@@ -1,0 +1,12 @@
+# Set line endings
+* text=auto
+
+# Treat common C# files as C# for linguist/github
+*.cs linguist-language=C#
+*.xaml linguist-language=XML
+
+# Prevent merging of binary files
+*.dll binary
+*.exe binary
+*.png binary
+*.jpg binary
