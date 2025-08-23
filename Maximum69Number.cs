@@ -30,8 +30,8 @@
 // num consists of only 6 and 9 digits.
 namespace LeetcodeExercices
 {
-    public class Maximum69Number {
-        public int Implementation (int num) {
+    public static class Maximum69Number {
+        public static int Implementation (int num) {
             var numChar = num.ToString().ToCharArray();
 
             for (var i = 0; i < numChar.Length; i++)

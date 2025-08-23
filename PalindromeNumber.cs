@@ -18,9 +18,9 @@
 // Follow up: Could you solve it without converting the integer to a string?
 namespace LeetcodeExercices
 {
-    public class IsPalindromeComparingReverseArray
+    public static class IsPalindromeComparingReverseArray
     {
-        public bool ComparingReverseArray(int x)
+        public static bool ComparingReverseArray(int x)
         {
             //Runtime: 6 ms - beats 22.32%
             //memory: 38.85mb ms - beats 17.72%
@@ -35,7 +35,7 @@ namespace LeetcodeExercices
 
         //Runtime 8ms Beats 17.13% =(
         //Memory 37.34mb Beats 27.38% =(
-        public bool NoConvertingToCharArray(int x)
+        public static bool NoConvertingToCharArray(int x)
         {
             //A negative number will never be a palindrome!
             if (x < 0) return false;
@@ -69,7 +69,7 @@ namespace LeetcodeExercices
 
         //Runtime 3ms - Beats 36.78%
         //Memory 35.66Mb Beats 56.18%
-        public bool NoConvertingToCharArrayUsingOneArrayOnly(int x)
+        public static bool NoConvertingToCharArrayUsingOneArrayOnly(int x)
         {
 
             //A negative number will never be a palindrome!

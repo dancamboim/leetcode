@@ -27,9 +27,9 @@
 
 namespace LeetcodeExercices
 {
-    public class TwoSum
+    public static class TwoSum
     {
-        public int[] Implementation(int[] nums, int target)
+        public static int[] Implementation(int[] nums, int target)
         {
             //O(n²)
             // for (var i = 0; i < nums.Length; i++)

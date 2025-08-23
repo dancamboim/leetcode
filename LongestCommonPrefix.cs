@@ -1,8 +1,8 @@
 namespace LeetcodeExercices
 {
-    class LongestCommonPrefix
+    static class LongestCommonPrefix
     {
-        public string Implementation(string[] strs)
+        public static string Implementation(string[] strs)
         {
             var commonPrefix = strs[0];
 
