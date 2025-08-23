@@ -25,7 +25,7 @@
  
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
-namespace Exercices
+namespace Leetcode.Problems
 {
     public static class TwoSum
     {

@@ -1,4 +1,4 @@
-namespace Exercices
+namespace Leetcode.Problems
 {
     static class LongestCommonPrefix
     {

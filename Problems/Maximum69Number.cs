@@ -28,7 +28,7 @@
 
 // 1 <= num <= 104
 // num consists of only 6 and 9 digits.
-namespace Exercices
+namespace Leetcode.Problems
 {
     public static class Maximum69Number {
         public static int Implementation (int num) {
